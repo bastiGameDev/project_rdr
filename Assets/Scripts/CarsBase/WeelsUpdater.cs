@@ -20,7 +20,7 @@ public class WeelsUpdater : MonoBehaviour
             wheels[i].transform.rotation = wheelRotation;
         }
 
-        float motor = maxMotorTorque * Input.GetAxis("Vertical");
+        float motor = maxMotorTorque * 3 * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
         foreach (AxleInfo axleInfo in axleInfos) {
