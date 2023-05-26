@@ -47,8 +47,10 @@ public class RaceManager : MonoBehaviour
         foreach(TimeMultiplayer multiplayer in rewardMultiplayers) {
             if(time <= multiplayer.time) {
                 PlayerStats playerStats = PlayerStats.GetStats();
-                playerStats.AddValues(moneyReward, respectReward, multiplayer.multiplayer);
-                playerStats.SaveStats();
+                if(playerStats != null) {
+                    playerStats.AddValues(moneyReward, respectReward, multiplayer.multiplayer);
+                    playerStats.SaveStats();
+                }
             }
         }
         SceneManager.LoadScene(stageID);
