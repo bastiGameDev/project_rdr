@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &9257329 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2276752851138667169, guid: 1ef62c5aaf4d5b64899c41b231546753,
+    type: 3}
+  m_PrefabInstance: {fileID: 2276752851146843088}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebd66d0335fd8d4a852d9fee5ce9383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &99656617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1287,7 @@ PrefabInstance:
     - target: {fileID: 2276752851138667170, guid: 1ef62c5aaf4d5b64899c41b231546753,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.35999966
       objectReference: {fileID: 0}
     - target: {fileID: 2276752851138667170, guid: 1ef62c5aaf4d5b64899c41b231546753,
         type: 3}
@@ -1317,6 +1329,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RaceManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4876621001347932830, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897284167450870611, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 9257329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ef62c5aaf4d5b64899c41b231546753, type: 3}
 --- !u!1001 &8702874723559151845
