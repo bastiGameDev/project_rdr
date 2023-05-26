@@ -11,6 +11,7 @@ public class MoveManager : MonoBehaviour
     [SerializeField] private float maxSteeringAngle;
     [SerializeField] private float brakesForce;
     [SerializeField] private float wheelsGroundCollision;
+    public bool isLoked = false;
     private bool isMoving {
         get {
             if (maxMotorTorque * Input.GetAxis("Vertical") != 0f) return true;
@@ -19,8 +20,8 @@ public class MoveManager : MonoBehaviour
     }
 
     private void FixedUpdate() {
-
-        Move();
+        if(!isLoked)
+            Move();
 
         if (Input.GetKey(KeyCode.Space)) {
             ApplyBrakes();
@@ -62,6 +63,10 @@ public class MoveManager : MonoBehaviour
             axleInfo.leftWheel.brakeTorque = 0;
             axleInfo.rightWheel.brakeTorque = 0;
         }
+    }
+
+    public void SetIsLoked(bool lockState) {
+        isLoked = lockState;
     }
 
     [System.Serializable]
