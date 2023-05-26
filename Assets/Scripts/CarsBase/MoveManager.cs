@@ -11,6 +11,12 @@ public class MoveManager : MonoBehaviour
     [SerializeField] private float maxSteeringAngle;
     [SerializeField] private float brakesForce;
     [SerializeField] private float wheelsGroundCollision;
+    private bool isMoving {
+        get {
+            if (maxMotorTorque * Input.GetAxis("Vertical") != 0f) return true;
+            return false;
+        }
+    }
 
     private void FixedUpdate() {
 
@@ -18,21 +24,28 @@ public class MoveManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space)) {
             ApplyBrakes();
-        } else {
+        } else if (isMoving) {
             RemoveBrakes();
         }
     }
     private void Move() {
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+        //Applying streering 
         foreach (AxleInfo axleInfo in axleInfos) {
             if (axleInfo.isSteering) {
                 axleInfo.leftWheel.steerAngle = steering;
                 axleInfo.rightWheel.steerAngle = steering;
             }
-            if (axleInfo.isMotor) {
-                axleInfo.leftWheel.motorTorque = motor;
-                axleInfo.rightWheel.motorTorque = motor;
+        }
+        if (!isMoving) {
+            ApplyBrakes();
+        } else {
+            foreach (AxleInfo axleInfo in axleInfos) {
+                if (axleInfo.isMotor) {
+                    axleInfo.leftWheel.motorTorque = motor;
+                    axleInfo.rightWheel.motorTorque = motor;
+                }
             }
         }
     }
