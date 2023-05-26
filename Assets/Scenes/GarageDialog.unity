@@ -182,8 +182,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 59d7bc1f2ab45c54e97a6a8b84d8d613, type: 3}
-    m_FontSize: 16
+    m_Font: {fileID: 12800000, guid: 00ad49f8bc19b6d408e869a68f8dba8c, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -758,8 +758,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 59d7bc1f2ab45c54e97a6a8b84d8d613, type: 3}
-    m_FontSize: 16
+    m_Font: {fileID: 12800000, guid: 00ad49f8bc19b6d408e869a68f8dba8c, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1266,8 +1266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228.78, y: 59.8}
-  m_SizeDelta: {x: 424.7, y: 42.2}
+  m_AnchoredPosition: {x: -214.4, y: 59.8}
+  m_SizeDelta: {x: 447.2, y: 42.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424436651
 MonoBehaviour:
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8009203, g: 1, b: 0.4009434, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1290,8 +1290,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 59d7bc1f2ab45c54e97a6a8b84d8d613, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 62338dc9dd27d624886a6f07d0875084, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1716,8 +1716,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 59d7bc1f2ab45c54e97a6a8b84d8d613, type: 3}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: 00ad49f8bc19b6d408e869a68f8dba8c, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
