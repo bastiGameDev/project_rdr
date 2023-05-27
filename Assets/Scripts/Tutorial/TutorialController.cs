@@ -1,9 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialController : MonoBehaviour
 {
+
     [SerializeField] private List<TutorTask> tasks;
     [SerializeField] private int currentTask = 0;
     private TutorialUIController UIController;
@@ -45,4 +45,5 @@ public class TutorialController : MonoBehaviour
         public TaskType type;
 
     }
+
 }
