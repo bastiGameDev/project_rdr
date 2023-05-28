@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -93,7 +94,7 @@ public class DialogueSystem : MonoBehaviour
         currentDialogueIndex++;
         if (currentDialogueIndex >= dialogueOptions.Length)
         {
-            currentDialogueIndex = 0;
+            SceneManager.LoadScene(1);
         }
 
         // Остановка предыдущей корутины печати, если она была запущена

@@ -910,7 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusedImage: {fileID: 21300000, guid: 5fc50c58b7e3c354aadcf9f35b73004d, type: 3}
   description: "\u0411\u0430\u0442\u0430\u0439\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
-  raceID: 2
+  raceID: 4
   menuUIController: {fileID: 1792395524}
   raceController: {fileID: 1792395525}
 --- !u!114 &194162163
@@ -2531,7 +2531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusedImage: {fileID: 21300000, guid: 486699bc16c0d554cadd4afb23065a04, type: 3}
   description: "\u041A\u0443\u0442\u0443\u0437"
-  raceID: 1
+  raceID: 3
   menuUIController: {fileID: 1792395524}
   raceController: {fileID: 1792395525}
 --- !u!114 &625714821

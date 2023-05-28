@@ -1269,6 +1269,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2276752850187489873, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2276752851138667169, guid: 1ef62c5aaf4d5b64899c41b231546753,
         type: 3}
       propertyPath: rewardMultiplayers.Array.size
@@ -1344,6 +1349,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RaceManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2276752851993695005, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4876621001347932830, guid: 1ef62c5aaf4d5b64899c41b231546753,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1354,6 +1364,31 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 9257329}
+    - target: {fileID: 8434463057491646095, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434463057491646095, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434463057491646095, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434463057491646095, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471388813361232021, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ef62c5aaf4d5b64899c41b231546753, type: 3}
 --- !u!1001 &8702874723559151845

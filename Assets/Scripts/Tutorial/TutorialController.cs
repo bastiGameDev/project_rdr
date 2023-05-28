@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialController : MonoBehaviour
 {
@@ -20,8 +21,21 @@ public class TutorialController : MonoBehaviour
             currentTask++;
             if(currentTask < tasks.Count)
                 StartCoroutine(UIController.SlowChangeText(tasks[currentTask]));
+            else {
+                TutorTask task = new TutorTask();
+                task.taskDescription = "Завершено";
+                task.goal = 1;
+                task.progress = 1;
+                StartCoroutine(UIController.SlowChangeText(task));
+                StartCoroutine(LevelEnd());
+            }
+
         }
 
+    }
+    private IEnumerator LevelEnd() {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene(2);
     }
     private void FixedUpdate() {
         if(currentTask == 1 && Input.GetKey(KeyCode.R)) {
