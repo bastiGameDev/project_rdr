@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CutsceneManager : MonoBehaviour
 {
-    public PlayableDirector playableDirector;
+    //public PlayableDirector playableDirector;
 
-    private void Start()
-    {
-        playableDirector.Play(); // Запускаем проигрывание кат-сцены
-    }
+    //private void Start()
+    //{
+    //    playableDirector.Play(); // Запускаем проигрывание кат-сцены
+    //}
 }
