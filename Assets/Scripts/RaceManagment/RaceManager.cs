@@ -18,8 +18,6 @@ public class RaceManager : MonoBehaviour
     private bool counting = false;
     void Start()
     {
-        if(RaceSettings.car != null)
-            spawnCar = RaceSettings.car;
         car = Instantiate(spawnCar, transform.position, Quaternion.identity);
         raceUI = GetComponent<RaceUI>();
         carManager = car.GetComponent<MoveManager>();
@@ -46,23 +44,15 @@ public class RaceManager : MonoBehaviour
     }
     public void FinishRace() {
         StopRace();
-        float currentMultiplayer = 1;
         foreach(TimeMultiplayer multiplayer in rewardMultiplayers) {
             if(time <= multiplayer.time) {
                 PlayerStats playerStats = PlayerStats.GetStats();
-                currentMultiplayer = multiplayer.multiplayer;
                 if(playerStats != null) {
                     playerStats.AddValues(moneyReward, respectReward, multiplayer.multiplayer);
                     playerStats.SaveStats();
                 }
-                break;
             }
         }
-        carManager.SetIsLoked(true);
-        string rewardsText = $"Награды:\nДеньги: {moneyReward * currentMultiplayer}\nРепутация: {respectReward * currentMultiplayer}";
-        raceUI.OpenFinishMenu(RaceSettings.raceName, rewardsText);
-    }
-    public void OpenGarage() {
         SceneManager.LoadScene(stageID);
     }
 
