@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChooseRaceController : MonoBehaviour
 {
@@ -18,4 +17,9 @@ public class ChooseRaceController : MonoBehaviour
     public void SetMachine(GameObject machine) { 
         choosenMachine = machine;
     }
+
+   public void StartRace() {
+        RaceSettings.car = choosenMachine;
+        SceneManager.LoadScene(loadScene);
+   }
 }
