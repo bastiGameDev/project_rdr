@@ -1269,6 +1269,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2276752851138667169, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: rewardMultiplayers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276752851138667169, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: rewardMultiplayers.Array.data[0].time
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276752851138667169, guid: 1ef62c5aaf4d5b64899c41b231546753,
+        type: 3}
+      propertyPath: rewardMultiplayers.Array.data[0].multiplayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2276752851138667170, guid: 1ef62c5aaf4d5b64899c41b231546753,
         type: 3}
       propertyPath: m_RootOrder

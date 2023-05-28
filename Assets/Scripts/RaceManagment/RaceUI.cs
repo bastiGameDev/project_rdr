@@ -15,7 +15,7 @@ public class RaceUI : MonoBehaviour
             countdownText.text = i.ToString();
             for(float j = startTextSize; j<startTextSize*2; j++) {
                 countdownText.fontSize = j;
-                yield return new WaitForSeconds(0.5f / (startTextSize * 2));
+                yield return new WaitForSeconds(0.25f / (startTextSize * 2));
             }
         }
         countdownText.fontSize = startTextSize;
