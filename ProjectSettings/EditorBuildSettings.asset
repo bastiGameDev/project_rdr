@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/GarageDialog.unity
+    guid: bba76a407b71a7b4cb14d4a0ab2eeabd
+  - enabled: 1
+    path: Assets/Scenes/GarageScenes.unity
+    guid: f33ce5d8d954204488fd72151b1f4a30
+  - enabled: 1
+    path: Assets/Scenes/ChooseMenu.unity
+    guid: 63ef905df5cc9a748a123f13d5f55f08
+  - enabled: 1
+    path: Assets/Scenes/Kutuzovsky.unity
+    guid: 48c7e989aac0ff440bce6a73c7e50232
+  - enabled: 1
+    path: Assets/Scenes/Bataysk.unity
+    guid: 1d30fa69c0ab6ab4abb1493a04f1ecdb
+  - enabled: 1
+    path: Assets/Scenes/DreamScene.unity
+    guid: 7098566651870014ab520002181cc5c8
   m_configObjects: {}
